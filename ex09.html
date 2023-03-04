@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular média ponderada</title>
+</head>
+<body>
+    <h2>Informe as três notas do aluno:</h2>
+    <p>A média será calculada da seguinte forma: A1: peso 1, A2: peso 2 e A3: peso 3.</p>
+    <form method="POST" action="ex09.php">
+        <fieldset>
+            <input type="text" name="nome" placeholder="Nome do aluno" required><br><br>
+            <input type="number" name="a1" value="a1" min="0" max="10" placeholder="A1">
+            <input type="number" name="a2" value="a2" min="0" max="10" placeholder="A2">
+            <input type="number" name="a3" value="a3" min="0" max="10" placeholder="A3">
+            <input type="submit" value="Calcular média ponderada">
+        </fieldset>
+    </form>
+</body>
+</html>
