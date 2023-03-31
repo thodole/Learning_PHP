@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Calcular prestação atrasada</title>
+	</head>
+	<body>
+		<h2>Calcule o valor de sua prestação em atraso:</h2>
+		<form method="POST" action="ex12.php">
+			<fieldset>
+				<p>Informe o valor da prestação:</p>
+				<input type="number" step="0.01" name="valor" value="valor" placeholder="Exemplo: 245.50">
+				<p>Informe o valor da taxa:</p>
+				<input type="number" step="0.01" name="taxa" value="taxa" placeholder="Exemplo: 24.90">
+				<p>Informe o período de atraso (Somente número):</p>
+				<input type="number" step="1" name="tempo" value="tempo" placeholder="Exemplo: 29"><br><br>
+				<p><input type="submit" value="Calcular valor da prestação"></p>
+			</fieldset>
+		</form>
+	</body>
+</html>
