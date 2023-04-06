@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+	    <meta charset="UTF-8">
+	    <title>Área do Retângulo / Tipo Triângulo</title>
+	    <style>
+	        div input {
+	            width: 60px;
+	        }
+	    </style>
+	</head>
+	<body>
+	    <h1>Área Retângulo / Tipo Triângulo</h1>
+	    <form action="edd-ex10-ar.php" method="POST">
+	        <p>Selecione o que deseja fazer:</p>
+	        <input type="radio" name="escolha" value="ret" onclick="gerarinfo('ret')"> Calcular a área de um Retângulo <br>
+	        <input type="radio" name="escolha" value="tri" onclick="gerarinfo('tri')"> Identificar o tipo de um Triângulo
+	        <div id="selecao"></div>
+	        <input type="submit" value="Calcular" style="margin-top: 10px;">
+	    </form>
+	    <br>
+	    <a href="edd-ex10-index.html">Voltar</a>
+	    <script>
+	        function gerarinfo(escolha) {
+	            let div = document.getElementById("selecao")
+	            if (escolha == "ret") {
+	                div.innerHTML = `<p>Informe o tamanho da base do retângulo (m): <input type="number" min="0" name="b"></p>
+	                <p>Informe a altura do retângulo (m): <input type="number" min="0" name="h" style="margin-left: 79px;"></p>`;
+	            } else if (escolha == "tri") {
+	                div.innerHTML = `<p>Informe o tamanho do lado A do triângulo: <input type="number" min="0" name="a"></p>
+	                <p>Informe o tamanho do lado B do triângulo: <input type="number" min="0" name="b"></p>
+	                <p>Informe o tamanho do lado C do triângulo: <input type="number" min="0" name="c"></p>`;
+	            }
+	        }
+	    </script>
+	</body>
+</html>
