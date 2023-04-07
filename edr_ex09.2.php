@@ -13,6 +13,6 @@
 			echo "<p>O menor número digitado foi: $menor.
 				  <p>O maior número digitado foi: $maior.";
 		?>
-		<p><a href="ex09.html">Voltar</a></p>
+		<p><a href="edr_ex09.html">Voltar</a></p>
 	</body>
 </html>

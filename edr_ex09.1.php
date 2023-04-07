@@ -20,9 +20,9 @@
 		?>
 		<form method="POST" action="<?php
 			if ($_POST["num"]==0) {
-				echo "ex09.2.php";
+				echo "edr_ex09.2.php";
 			} else {
-				echo "ex09.php";
+				echo "edr_ex09.1.php";
 			}
 		?>">
 			Number: <input type="number" name="num">
