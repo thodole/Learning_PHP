@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Coleta de dados</title>
+		<style>
+			th {
+				width: 20%;
+				text-align: left;
+			}
+			td {
+				width: 50%;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Censo - Região X</h1>
+		<p>Informe os seguintes dados referentes a cada habitante:</p>
+		<form method="POST", action="edr_ex11.1.php">
+			<table border="1">
+				<tr>
+					<th>Sexo</th>
+					<td>
+						<input type="radio" id="sexomas" name="sexo">
+						<label for="sexomas">Masculino&nbsp;</label>
+						<input type="radio" id="sexofem" name="sexo" required>
+						<label for="sexofem">Feminino&nbsp;</label>
+					</td>
+				</tr>
+				<tr>
+					<th>Cor dos olhos</th>
+					<td>
+						<input type="radio" id="olhoa" name="olhos" value="1">
+						<label for="olhoa">Azuis&nbsp;</label>
+						<input type="radio" id="olhov" name="olhos" value="2">
+						<label for="olhov">Verdes&nbsp;</label>
+						<input type="radio" id="olhoc" name="olhos" value="3">
+						<label for="olhoc">Castanhos&nbsp;</label>
+					</td>
+				</tr>
+				<tr>
+					<th>Cor dos cabelos</th>
+					<td>
+						<input type="radio" id="cabelol" name="cabelos" value="1">
+						<label for="cabelol">Louros&nbsp;</label>
+						<input type="radio" id="cabeloc" name="cabelos" value="2">
+						<label for="cabeloc">Castanhos&nbsp;</label>
+						<input type="radio" id="cabelop" name="cabelos" value="3">
+						<label for="cabelop">Pretos&nbsp;</label>
+					</td>
+				</tr>
+				<tr>
+					<th>Idade</th>
+					<td>
+						<input type="number" min="0" max="130" name="idade" required>
+					</td>
+				</tr>
+			</table>
+			<input hidden type="number" name="counter" value="1">
+			<input hidden type="number" name="galegos" value="0">
+			<input hidden type="number" name="idademaior" value="0">
+			<p><input type="submit" value="Adicionar"></p>
+		</form>
+	</body>
+</html>

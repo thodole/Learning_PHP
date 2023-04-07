@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Algoritmo de crescimento</title>
+		<style>
+			th, td {
+				width: 20%;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Algoritmo de prospecção de crescimento</h1>
+		<p>A seguir, informe os dados de duas pessoas e este programa fará a prospecção do crescimento de ambas a fim de determinar quando a pessoa, atualmente, de menor estatura será maior que a pessoa, atualmente, de maior estatura.</p>
+		<p>Atenção: Informe primeiro os dados da pessoa mais alta. Em seguida, em baixo, informe os dados da pessoa menor.</p>
+		<form method="POST" action="edr_ex10.php">
+			<table border="1">
+				<thead>
+					<tr>
+						<th>Nome</th>
+						<th>Idade</th>
+						<th>Sexo</th>
+						<th>Altura (cm)</th>
+						<th>F.C./ano</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td> <input type="text" name="fulano" placeholder="Ex.: Fulano Silva"> </td>
+						<td> <input type="number" name="idadef" min="0" placeholder="Ex.: 12 anos"> </td>
+						<td>
+							<input type="radio" id="sexoffem" name="sexof" value="1">
+							<label for="sexoffem">Fem&nbsp;</label>
+							<input type="radio" id="sexofmas" name="sexof" value="2">
+							<label for="sexofmas">Mas&nbsp;</label>
+						</td>
+						<td> <input type="number" step="1" name="alturaf" min="0" placeholder="Ex.: 150cm"> </td>
+						<td> <input type="number" step="1" name="fcf" min="0" placeholder="Ex.: 2cm/ano"> </td>
+					</tr>
+					<tr>
+						<td> <input type="text" name="ciclano" placeholder="Ex.: Ciclano Sauro"> </td>
+						<td> <input type="number" name="idadec" min="0" placeholder="Ex.: 10 anos"> </td>
+						<td>
+							<input type="radio" id="sexocfem" name="sexoc" value="1">
+							<label for="sexocfem">Fem&nbsp;</label>
+							<input type="radio" id="sexcomas" name="sexoc" value="2">
+							<label for="sexocmas">Mas&nbsp;</label>
+						</td>
+						<td> <input type="number" step="1" name="alturac" min="0" placeholder="Ex.: 110cm"> </td>
+						<td> <input type="number" step="1" name="fcc" min="0" placeholder="Ex.: 3cm/ano"> </td>
+					</tr>
+				</tbody>
+			</table>
+			<p><input type="submit" Value="Prospectar"></p>
+		</form>
+		<p>Legenda:<br>F.C./ano = Fator de crescimento, em metros, por ano.</p>
+	</body>
+</html>
