@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Eleições Online</title>
+		<style>
+			table {
+				max-width: 90%;
+			}
+			th, td {
+				width: 50%;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Orientações para votações</h1>
+		<p>A seguir, os votos devem ser registrados com base nos parâmetros da Tabela de Candidatos.</p>
+		<h2>Tabela de candidatos:</h2>
+		<table border="2">
+			<thead>
+				<th>Número do voto</th><th>Candidato</th>
+			</thead>
+			<tbody style="text-align: center;">
+				<tr><td>Voto = 0</td><td>Nulo</td></tr>
+				<tr><td>Voto = 1</td><td>Candidato A</td></tr>
+				<tr><td>Voto = 2</td><td>Candidato B</td></tr>
+				<tr><td>Voto = 3</td><td>Candidato C</td></tr>
+				<tr><td>Voto = 4</td><td>Candidato D</td></tr>
+				<tr><td>Voto = 5</td><td>Candidato E</td></tr>
+			</tbody>
+		</table>
+		<p>Informe a quantidade de eleitores do próximo grupo:</p>
+		<form method="POST" action="edr_ex15.1.php">
+			Quantidade de eleitores:
+			<input type="number" name="qtd" min="1" max="20" required>
+			<input hidden type="number" name="cont" value="1">
+			<input hidden type="number" name="voto" value="9">
+			<input hidden type="number" name="can0" value="0">
+			<input hidden type="number" name="can1" value="0">
+			<input hidden type="number" name="can2" value="0">
+			<input hidden type="number" name="can3" value="0">
+			<input hidden type="number" name="can4" value="0">
+			<input hidden type="number" name="can5" value="0">
+			<input type="submit" value="Ir para captação de votos">
+		</form>
+	</body>
+</html>
